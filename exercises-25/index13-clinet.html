@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #name{
+            width: 544px;
+            height: 645px;
+            margin: 100px auto;
+            background-color: rgb(111, 229, 20);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(183, 19, 87);
+            font-size: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div id="name" onclick="num(this)"></div>
+</body>
+<script>
+    function num(x){
+        x.innerHTML = x.clientHeight + " - "
+        x.innerHTML += x.clientWidth
+    }
+</script>
+</html>

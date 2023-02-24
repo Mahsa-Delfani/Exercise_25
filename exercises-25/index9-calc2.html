@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body>div{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+        }
+        body>div>div{
+            width: 10%;
+            height: 100%;
+            border: 1px solid rgba(51, 119, 11, 0.646);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: rgba(19, 20, 19, 0.014);
+            font-size: 20px;
+            transition: 1s;
+        }
+        body>div>div:nth-child(odd){
+            background-color: #ede211;
+        }
+        body>div>div:nth-child(even){
+            background-color: #1ecf7a;
+        }
+        body>div>div:hover{
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+    </div>
+    <div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+    </div>
+    <div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+    </div>
+    <div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+    </div>
+    <div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+    </div>
+    <div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+    </div>
+    <div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+    </div>
+    <div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+    </div>
+    <div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+    </div>
+    <div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+        <div onclick="show(this)"></div>
+    </div>  
+</body>
+<script>
+    for(let i = 1; i<=10; i++){
+        for(let m = 1; m<=10; m++){
+            document.querySelector('body>div:nth-of-type('+i+')>div:nth-of-type('+m+')').innerHTML=i*m
+        }
+    }
+    function show(name){
+        name.style.color='white'
+    }
+</script>
+</html>
